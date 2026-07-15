@@ -1,0 +1,87 @@
+@import "./variables.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(52, 211, 153, 0.35);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-raised);
+  border-radius: 999px;
+  border: 2px solid var(--color-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #23282a;
+}
+
+/* Visible keyboard focus ring, brand-tinted */
+:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-gradient-brand {
+  background-image: linear-gradient(135deg, var(--color-brand-from) 0%, var(--color-brand-to) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* The "runner" underline — a nod to the logo's running figure, used under the active nav link */
+.runner-underline {
+  position: relative;
+}
+.runner-underline::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(90deg, var(--color-brand-from), var(--color-brand-to));
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.35s ease;
+}
+.runner-underline:hover::after,
+.runner-underline[data-active="true"]::after {
+  transform: scaleX(1);
+}

@@ -1,0 +1,8 @@
+<!--
+  ضع هنا ملف الشعار الخاص بـ Fitora (SVG).
+  Placeholder — replace this file with the real logo.svg you already have.
+-->
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="10" fill="#0d0f10" />
+  <text x="50%" y="56%" text-anchor="middle" font-family="Cairo, sans-serif" font-weight="800" font-size="18" fill="#34d399">F</text>
+</svg>

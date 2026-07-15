@@ -1,0 +1,46 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="15%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#08090a" />
+  <rect width="1920" height="1080" fill="url(#dots)" />
+  <rect width="1920" height="1080" fill="url(#glow1)" />
+  <rect width="1920" height="1080" fill="url(#glow2)" />
+
+  <g opacity="0.9" transform="translate(960 540) rotate(-18)">
+    <!-- قضيب الأثقال -->
+    <rect x="-620" y="-14" width="1240" height="28" rx="14" fill="url(#barGrad)" opacity="0.5" />
+    <!-- الأقراص اليسرى -->
+    <rect x="-680" y="-90" width="40" height="180" rx="10" fill="#0d0f10" stroke="#34d399" stroke-opacity="0.4" stroke-width="2" />
+    <rect x="-720" y="-70" width="30" height="140" rx="8" fill="#0d0f10" stroke="#34d399" stroke-opacity="0.35" stroke-width="2" />
+    <!-- الأقراص اليمنى -->
+    <rect x="640" y="-90" width="40" height="180" rx="10" fill="#0d0f10" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="2" />
+    <rect x="690" y="-70" width="30" height="140" rx="8" fill="#0d0f10" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="2" />
+  </g>
+
+  <!-- خطوط حركة توحي بالسرعة والطاقة، صدى لشعار العدّاء -->
+  <g stroke-linecap="round" opacity="0.55">
+    <path d="M120 780 L360 730" stroke="#34d399" stroke-width="4" opacity="0.5" />
+    <path d="M90 830 L300 790" stroke="#34d399" stroke-width="4" opacity="0.35" />
+    <path d="M150 730 L340 695" stroke="#34d399" stroke-width="3" opacity="0.3" />
+    <path d="M1560 300 L1800 250" stroke="#14b8a6" stroke-width="4" opacity="0.4" />
+    <path d="M1600 350 L1830 305" stroke="#14b8a6" stroke-width="3" opacity="0.3" />
+  </g>
+
+  <rect width="1920" height="1080" fill="#08090a" fill-opacity="0.35" />
+</svg>

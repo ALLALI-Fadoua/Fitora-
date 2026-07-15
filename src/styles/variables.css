@@ -1,0 +1,11 @@
+:root {
+  --color-bg: #08090a;
+  --color-surface: #0d0f10;
+  --color-surface-raised: #141718;
+  --color-border: #1f2324;
+  --color-border-soft: rgba(52, 211, 153, 0.18);
+  --color-text-primary: #f4f6f5;
+  --color-text-muted: #9aa3a1;
+  --color-brand-from: #34d399;
+  --color-brand-to: #14b8a6;
+}
