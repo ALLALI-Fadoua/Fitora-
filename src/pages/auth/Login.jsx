@@ -116,13 +116,6 @@ export default function Login() {
           </Link>
         </p>
 
-        <div className="mt-6 bg-ink-900 border border-ink-700 rounded-xl p-4 text-xs text-white/40 leading-6">
-          <p className="text-white/55 font-semibold mb-1">للتجربة بدون حساب حقيقي (بيانات وهمية):</p>
-          <p>amine@example.com ← يفتح مساحة المدرب</p>
-          <p>khaled@example.com ← يفتح مساحة المتدرب</p>
-          <p>admin@fitora.dz ← يفتح مساحة الإدارة</p>
-          <p className="mt-1">أي كلمة مرور تعمل حاليًا.</p>
-        </div>
       </div>
     </div>
   );
